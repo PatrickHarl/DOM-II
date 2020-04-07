@@ -21,6 +21,7 @@ function get(selector){
 function changeBG(event){
 
     topContainer.style.backgroundColor = 'orange';
+    gsap.fromTo(".main-navigation", {x:-500}, {x:0});
 
 }
 
@@ -152,3 +153,4 @@ for(let i = 0; i < navLinks.length; i++)
     navLinks[i].addEventListener('click', linksClick);
 
 }
+
